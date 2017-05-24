@@ -56,7 +56,7 @@ module.exports = {
       disable: !isProd
     }),
     new HtmlWebpackPlugin({
-      title: 'React Seed Project w/Linting',
+      title: 'Family Search Assessment',
       // minify: {
       //   collapseWhitespace: true
       // },
