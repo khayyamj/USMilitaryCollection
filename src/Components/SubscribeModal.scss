@@ -44,13 +44,13 @@ $formColor: #F4F1E5;
   padding-left: 10px;
   p {
     margin: 0;
-    margin-bottom: -5px;
+    margin-bottom: -2px;
   }
 }
 
 .subscription-name-input-valid {
   width: 230px;
-  height: 15px;
+  height: 20px;
   padding: 0;
   border: 1px solid lightgrey;
   border-radius: 3px;
@@ -58,7 +58,7 @@ $formColor: #F4F1E5;
 
 .subscription-name-input-notvalid {
   width: 230px;
-  height: 15px;
+  height: 20px;
   padding: 0;
   border: 1px solid red;
   border-radius: 3px;
@@ -72,13 +72,13 @@ $formColor: #F4F1E5;
   background-color: $formColor;
   p {
     margin: 0;
-    margin-bottom: -5px;
+    margin-bottom: -2px;
   }
 }
 
 .subscription-input-valid {
   width: 490px;
-  height: 15px;
+  height: 20px;
   padding: 0;
   border: 1px solid lightgrey;
   border-radius: 3px;
@@ -86,7 +86,7 @@ $formColor: #F4F1E5;
 
 .subscription-input-notvalid {
   width: 490px;
-  height: 15px;
+  height: 20px;
   padding: 0;
   border: 1px solid red;
   border-radius: 3px;
@@ -111,12 +111,13 @@ $formColor: #F4F1E5;
 .subscribe-button {
   margin: 10px 0;
   font-family: 'Source Sans Pro', sans-serif;
-  background: #aed463;
+  background: linear-gradient(#94d65e, #78bf49);
   color: white;
   border-radius: 4px;
   width: 100px;
   height: 30px;
   font-size: 14px;
+  border-style: none;
 }
 
 .modal-fine-print {
@@ -125,6 +126,10 @@ $formColor: #F4F1E5;
   padding: 0 10px 10px 10px;
   text-align: justify;
   background-color: $formColor;
+  a {
+    cursor: pointer;
+    color: #0000EE;
+  }
 }
 
 .validation-warning {
