@@ -1,0 +1,96 @@
+.ancestry-subscribe-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: rgba(14, 14, 14, 0.3);
+}
+
+.ancestry-subscribe-form {
+  position: fixed;
+  top: 50%;
+  margin-top: -115px;
+  left: 50%;
+  margin-left: -260px;
+  width: 520px;
+  height: 230px;
+  border-radius: 5px;
+  background-color: white;
+  form {
+    background-color: #F5E4DB;
+  }
+}
+
+.ancestry-subscribe-form-header {
+  background-color: white;
+  padding: 10px 0 10px 10px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.ancestry-subscribe-form-name-fields {
+  display: flex;
+  padding-top: 15px;
+  background-color: #F5E4DB;
+}
+
+.ancestry-subscribe-form-name-input {
+  width: 100%;
+  padding-left: 10px;
+  p {
+    margin: 0;
+  }
+  input {
+    width: 230px;
+    height: 15px;
+    padding: 0;
+  }
+}
+
+.ancestry-subscribe-form-email-field{
+  width: 100%;
+  box-sizing: border-box;
+  padding-left: 10px;
+  padding-top: 15px;
+  background-color: #F5E4DB;
+  p {
+    margin: 0;
+  }
+  input {
+    width: 490px;
+    height: 15px;
+    padding: 0;
+  }
+}
+
+.close-subscribe-modal {
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  border: 1px solid white;
+  background-color: #3B3A3A;
+  color: white;
+  position: fixed;
+  top: 50%;
+  margin-top: -123px;
+  right: 50%;
+  margin-right: -270px;
+  text-align: center;
+}
+
+.subscribe-button {
+  margin: 10px;
+  font-family: 'Source Sans Pro', sans-serif;
+  background-color: green;
+  color: white;
+}
+
+.modal-fine-print {
+  font-size: 12px;
+  margin: 0;
+  padding: 0 10px 10px 10px;
+  text-align: justify;
+  background-color: #F5E4DB;
+}
