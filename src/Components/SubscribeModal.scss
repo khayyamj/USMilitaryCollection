@@ -46,13 +46,22 @@ $formColor: #F4F1E5;
     margin: 0;
     margin-bottom: -5px;
   }
-  input {
-    width: 230px;
-    height: 15px;
-    padding: 0;
-    border: 1px solid lightgrey;
-    border-radius: 3px;
-  }
+}
+
+.subscription-name-input-valid {
+  width: 230px;
+  height: 15px;
+  padding: 0;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+
+.subscription-name-input-notvalid {
+  width: 230px;
+  height: 15px;
+  padding: 0;
+  border: 1px solid red;
+  border-radius: 3px;
 }
 
 .ancestry-subscribe-form-email-field{
@@ -65,13 +74,22 @@ $formColor: #F4F1E5;
     margin: 0;
     margin-bottom: -5px;
   }
-  input {
-    width: 490px;
-    height: 15px;
-    padding: 0;
-    border: 1px solid lightgrey;
-    border-radius: 3px;
-  }
+}
+
+.subscription-input-valid {
+  width: 490px;
+  height: 15px;
+  padding: 0;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+
+.subscription-input-notvalid {
+  width: 490px;
+  height: 15px;
+  padding: 0;
+  border: 1px solid red;
+  border-radius: 3px;
 }
 
 .close-subscribe-modal {
@@ -112,4 +130,8 @@ $formColor: #F4F1E5;
 
 .validation-warning {
   color: red;
+}
+
+.invalid-input-border {
+  border: 1px solid red;
 }

@@ -5,6 +5,9 @@ import './SubscribeModal.scss'
 let firstNameValidation = true
 let lastNameValidation = true
 let emailValidation = true
+let firstNameInputStyle = 'subscription-name-input-valid'
+let lastNameInputStyle = 'subscription-name-input-valid'
+let emailSubscriptionInputStyle = 'subscription-input-valid'
 
 const validateEmail = function (email) {
   const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
@@ -32,14 +35,18 @@ class SubscribeModal extends React.Component {
     this.state.firstName ? firstNameValidation = true : firstNameValidation = false
     this.state.lastName ? lastNameValidation = true : lastNameValidation = false
     validateEmail(this.state.email) ? emailValidation = true : emailValidation = false
-    if (this.state.firstName && this.state.lastName && this.state.email) {
+    if (firstNameValidation && lastNameValidation && emailValidation) {
       console.log('Form information: ', this.state)
       this.setState({
         firstName: '',
         lastName: '',
         email: ''
       })
+      this.props.closeModal()
     } else {
+      firstNameValidation ? firstNameInputStyle = 'subscription-name-input-valid' : firstNameInputStyle = 'subscription-name-input-notvalid'
+      lastNameValidation ? lastNameInputStyle = 'subscription-name-input-valid' : lastNameInputStyle = 'subscription-name-input-notvalid'
+      emailValidation ? emailSubscriptionInputStyle = 'subscription-input-valid' : emailSubscriptionInputStyle = 'subscription-input-notvalid'
       this.forceUpdate()
     }
   }
@@ -59,6 +66,7 @@ class SubscribeModal extends React.Component {
                 </p>
                 }
                 <input
+                  className={firstNameInputStyle}
                   type='text'
                   value={this.state.firstName}
                   onChange={(event) => this.handleChange(event, 'firstName')}
@@ -72,21 +80,22 @@ class SubscribeModal extends React.Component {
                 </p>
                 }
                 <input
+                  className={lastNameInputStyle}
                   type='text'
                   value={this.state.lastName}
                   onChange={(event) => this.handleChange(event, 'lastName')}
-
                 />
               </span>
             </div>
             <div className='ancestry-subscribe-form-email-field'>
               {emailValidation ? <p>Your email</p> : <p className='validation-warning'>Your email
                 <span className='validation-warning'>
-                  <img src='../images/warning.png' className='validation-warning' /> Required
+                  <img src='../images/warning.png' className='validation-warning' /> A valid email is required
                 </span>
               </p>
               }
               <input
+                className={emailSubscriptionInputStyle}
                 type='text'
                 value={this.state.email}
                 onChange={(event) => this.handleChange(event, 'email')}
