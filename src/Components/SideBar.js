@@ -1,8 +1,11 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import './SideBar.scss'
 
 class SideBar extends React.Component {
+
   render () {
+    console.log('SideBar props', this.props)
     return (
       <div>
         <aside>
@@ -18,11 +21,20 @@ class SideBar extends React.Component {
         <aside>
           <h3>Let us help you discover your story</h3>
           <p>Begin your free family tree with a few simple facts. We'll help you discover a lot more. Start your tree by subscribing today for a free trial.</p>
-          <button className='featured-collections-button'>SUBSCRIBE TODAY</button>
+          <button
+            className='featured-collections-button'
+            onClick={this.props.openModal}
+          >
+            SUBSCRIBE TODAY
+          </button>
         </aside>
       </div>
     )
   }
+}
+
+SideBar.propTypes = {
+  openModal: PropTypes.func.isRequired
 }
 
 export default SideBar

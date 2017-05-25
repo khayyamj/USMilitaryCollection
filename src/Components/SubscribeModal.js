@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import './SubscribeModal.scss'
 
 let firstNameValidation = true
@@ -94,11 +95,20 @@ class SubscribeModal extends React.Component {
             </div>
           </form>
           <p className='modal-fine-print'>By creating an account, you agree to <a href=''>Ancestry Terms and Conditions</a> and understand that your information will be used in accordance with our <a href=''>Privacy Statement</a>, including that we will send you emails about our service and special offers.</p>
-          <div className='close-subscribe-modal'>x</div>
+          <div
+            className='close-subscribe-modal'
+            onClick={this.props.closeModal}
+          >
+            x
+          </div>
         </div>
       </div>
     )
   }
+}
+
+SubscribeModal.propTypes = {
+  closeModal: PropTypes.func.isRequired
 }
 
 export default SubscribeModal
