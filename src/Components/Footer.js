@@ -4,11 +4,11 @@ import './Footer.scss'
 const Footer = () => {
   return (
     <footer className='usmilitary-collection-page-footer'>
-      <a href=''>© 1997-2015 Ancestry</a>
-      <a href=''>Corporate Information</a>
-      <a href=''>Privacy</a>
-      <a href=''>Terms and Conditions</a>
-      <a href=''>Site Map</a>
+      <span className='footer-information'>© 1997-2015 Ancestry</span>
+      <span className='footer-information'><a href=''>Corporate Information</a></span>
+      <span className='footer-information'><a href=''>Privacy</a></span>
+      <span className='footer-information'><a href=''>Terms and Conditions</a></span>
+      <span className='footer-information'><a href=''>Site Map</a></span>
     </footer>
   )
 }

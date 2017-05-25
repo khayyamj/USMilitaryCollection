@@ -2,6 +2,8 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import './SubscribeModal.scss'
 
+const pathToWarning = require('../images/warning.png')
+
 let firstNameValidation = true
 let lastNameValidation = true
 let emailValidation = true
@@ -61,7 +63,7 @@ class SubscribeModal extends React.Component {
               <span className='ancestry-subscribe-form-name-input'>
                 {firstNameValidation ? <p>Your first name</p> : <p className='validation-warning'>Your first name
                   <span className='validation-warning'>
-                    <img src='../images/warning.png' className='validation-warning' /> Required
+                    <img src={pathToWarning} className='validation-warning' /> Required
                   </span>
                 </p>
                 }
@@ -75,7 +77,7 @@ class SubscribeModal extends React.Component {
               <span className='ancestry-subscribe-form-name-input'>
                 {lastNameValidation ? <p>Your last name</p> : <p className='validation-warning'>Your last name
                   <span className='validation-warning'>
-                    <img src='../images/warning.png' className='validation-warning' /> Required
+                    <img src={pathToWarning} className='validation-warning' /> Required
                   </span>
                 </p>
                 }
@@ -90,7 +92,7 @@ class SubscribeModal extends React.Component {
             <div className='ancestry-subscribe-form-email-field'>
               {emailValidation ? <p>Your email</p> : <p className='validation-warning'>Your email
                 <span className='validation-warning'>
-                  <img src='../images/warning.png' className='validation-warning' /> A valid email is required
+                  <img src={pathToWarning} className='validation-warning' /> A valid email is required
                 </span>
               </p>
               }

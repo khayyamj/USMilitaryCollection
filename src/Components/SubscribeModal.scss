@@ -111,8 +111,7 @@ $formColor: #F4F1E5;
 .subscribe-button {
   margin: 10px 0;
   font-family: 'Source Sans Pro', sans-serif;
-  background: linear-gradient(#54D12C, #30AE08);
-  box-shadow: 0px 2px 0px 0px #ccc;
+  background: #aed463;
   color: white;
   border-radius: 4px;
   width: 100px;
@@ -130,6 +129,11 @@ $formColor: #F4F1E5;
 
 .validation-warning {
   color: red;
+  img {
+    width: 15px;
+    height: 15px;
+    padding-left: 10px;
+  }
 }
 
 .invalid-input-border {

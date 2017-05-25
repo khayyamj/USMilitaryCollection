@@ -5,7 +5,7 @@ const Head = () => {
   return (
     <header className='header-usmilitary'>
       <div className='header-link-history'>
-        <p>Home <span>></span> Search <span>></span> US Military Collection</p>
+        <p><a href=''>Home</a> <span>></span> <a href=''>Search</a> <span>></span> US Military Collection</p>
       </div>
       <div className='header-title'>
         <h1>U.S. Military Collection</h1>

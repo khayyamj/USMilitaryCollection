@@ -1,5 +1,24 @@
 .usmilitary-collection-page-footer {
+  flex-grow: 1;
   width: 100%;
+  min-height: 300px;
   display: flex;
   justify-content: center;
+  background-color: #f0eeeb;
+}
+
+.footer-information {
+  padding: 9px;
+  font-size: 12px;
+  a {
+    text-decoration: none;
+    color: #0000EE;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 600px) {
+  .usmilitary-collection-page-footer {
+    min-height: 0;
+  }
 }
