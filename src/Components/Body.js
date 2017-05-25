@@ -4,7 +4,7 @@ import './Body.scss'
 class Body extends React.Component {
   render () {
     return (
-      <main>
+      <main className='main-content-container'>
         <h2>World conflicts. Personal stories.</h2>
         <p>Throughout history, millions of courageous men and women have served and protected their country in times of conflict. Were your ancestors among them? It's never beeneasier to find out on Ancestry.com, the world's largest online collection of family history resources, including millions of military records spanning from before the Revolutionary War all the way up to Vietnam.</p>
         <img src='../images/soldiers-World-War-II.jpg' className='main-body-image' />

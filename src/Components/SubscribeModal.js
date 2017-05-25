@@ -29,11 +29,11 @@ class SubscribeModal extends React.Component {
 
   handleSubmit (event) {
     event.preventDefault()
-    console.log('Submit: ', this.state)
     this.state.firstName ? firstNameValidation = true : firstNameValidation = false
     this.state.lastName ? lastNameValidation = true : lastNameValidation = false
     validateEmail(this.state.email) ? emailValidation = true : emailValidation = false
     if (this.state.firstName && this.state.lastName && this.state.email) {
+      console.log('Form information: ', this.state)
       this.setState({
         firstName: '',
         lastName: '',

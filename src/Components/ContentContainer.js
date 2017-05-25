@@ -17,12 +17,10 @@ class ContentContainer extends React.Component {
   }
 
   displayModal () {
-    console.log('Toggle Modal', this.state.showModal)
     this.setState({ showModal: !this.state.showModal })
   }
 
   render () {
-    console.log('Show Modal:', this.state.showModal)
     return (
       <div className='usmilitary-collection-page-container'>
         <Head />
@@ -36,6 +34,7 @@ class ContentContainer extends React.Component {
 
 ContentContainer.propTypes = {
   openModal: PropTypes.func,
+  closeModal: PropTypes.func,
   showModal: PropTypes.bool
 }
 

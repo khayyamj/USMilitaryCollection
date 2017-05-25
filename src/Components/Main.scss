@@ -1,4 +1,9 @@
 .main-body-container {
+  box-sizing: border-box;
+  width: 100%;
   display: flex;
-  justify-content: space-between;
+  flex-flow: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: tan;
 }
